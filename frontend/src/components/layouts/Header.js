@@ -19,7 +19,7 @@ export default function Header(){
             <div className="col-12">
                 <div className="navbar-brand">
                     <Link to="/"> 
-                    <img width="150px" alt=" Logo" src="/images/M-Store logo.png"  />
+                    <img width="150px" alt=" Logo" src="/images/M-Store.png"  />
                     </Link>
                 </div>
             </div>
