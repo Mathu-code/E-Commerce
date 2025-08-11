@@ -1,3 +1,5 @@
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="mstore-footer">
@@ -23,14 +25,14 @@ export default function Footer() {
         {/* Contact */}
         <div className="footer-section contact">
           <h4>Contact Us</h4>
-          <p>Email: support@mstore.com</p>
-          <p>Phone: +1 (800) 123-4567</p>
-          <p>Address: 456 Market Street, Tech City</p>
+          <p><FaEnvelope /> support@mstore.com</p>
+          <p><FaPhone /> +1 (800) 123-4567</p>
+          <p><FaMapMarkerAlt /> 456 Market Street, Tech City</p>
           <div className="social-icons">
-            <a href="https://facebook.com/mstore" target="_blank" rel="noreferrer" aria-label="Facebook">👍</a>
-            <a href="https://twitter.com/mstore" target="_blank" rel="noreferrer" aria-label="Twitter">🐦</a>
-            <a href="https://instagram.com/mstore" target="_blank" rel="noreferrer" aria-label="Instagram">📸</a>
-            <a href="https://linkedin.com/company/mstore" target="_blank" rel="noreferrer" aria-label="LinkedIn">🔗</a>
+            <a href="https://facebook.com/mstore" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
+            <a href="https://twitter.com/mstore" target="_blank" rel="noreferrer" aria-label="Twitter"><FaTwitter /></a>
+            <a href="https://instagram.com/mstore" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://linkedin.com/company/mstore" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
           </div>
         </div>
 

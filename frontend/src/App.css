@@ -619,22 +619,25 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
-
+/*footer*/
+/* General Footer Styles */
 .mstore-footer {
-  background-color: #111827; /* Dark navy */
-  color: #e4e4e7; /* Light gray */
-  padding: 40px 20px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #232f3e; /* Changed to match header */
+  color: #f5f5f5; /* Light Text */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
 }
 
+/* Footer Sections */
 .footer-section {
   flex: 1 1 220px;
   margin: 15px;
@@ -642,116 +645,139 @@ ul.CTAs a {
 
 .footer-section h3,
 .footer-section h4 {
-  color: #fbbf24; /* Amber-400 */
-  margin-bottom: 15px;
-  font-weight: 700;
   font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.footer-section p,
-.footer-section ul {
-  margin: 0;
-  padding: 0;
+.footer-section p {
+  color: #dcdcdc;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
+/* Links */
 .footer-section ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 12px;
+  margin: 8px 0;
 }
 
 .footer-section ul li a {
-  color: #e4e4e7;
+  color: #dcdcdc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #fbbf24;
-  text-decoration: underline;
+  color: #febd69; /* Hover matches site theme */
 }
 
+/* Contact Section */
+.footer-section.contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section.contact svg {
+  color: #febd69; /* Matches site yellow */
+  font-size: 1.2rem;
+}
+
+/* Social Icons */
 .social-icons {
   margin-top: 10px;
 }
 
 .social-icons a {
-  font-size: 22px;
-  margin-right: 20px;
-  color: #e4e4e7;
-  transition: color 0.3s ease;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: #dcdcdc;
+  transition: color 0.3s ease, transform 0.2s ease;
   text-decoration: none;
-  user-select: none;
 }
 
-.social-icons a:hover {
-  color: #fbbf24;
-  transform: scale(1.1);
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active {
+  color: #febd69; /* Touch/hover color change */
+  transform: translateY(-3px) scale(1.1); /* Small bounce effect */
 }
 
-.newsletter form {
+/* Newsletter */
+.footer-section.newsletter form {
   display: flex;
-  max-width: 320px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.newsletter input[type="email"] {
-  flex: 1;
-  padding: 10px 14px;
+.footer-section.newsletter input {
+  padding: 10px;
   border: none;
-  border-radius: 3px 0 0 3px;
-  font-size: 0.9rem;
   outline: none;
+  flex: 1;
+  min-width: 200px;
+  border-radius: 4px;
 }
 
-.newsletter button {
-  padding: 10px 20px;
-  background-color: #fbbf24;
+.footer-section.newsletter button {
+  background-color: #febd69;
   border: none;
-  color: #111827;
-  font-weight: 600;
+  padding: 10px 20px;
+  color: #232f3e;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 0 3px 3px 0;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-.newsletter button:hover {
-  background-color: #d6a519;
+.footer-section.newsletter button:hover {
+  background-color: #fa9c23;
 }
 
+/* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid #374151;
-  margin-top: 35px;
-  padding-top: 15px;
   text-align: center;
-  font-size: 0.9rem;
-  color: #9ca3af; /* Gray-400 */
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #aaa;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
   .footer-section {
     max-width: 90%;
-    margin-bottom: 30px;
   }
 
-  .newsletter form {
+  .footer-section.contact p {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .footer-section.newsletter form {
     flex-direction: column;
+    align-items: center;
   }
 
-  .newsletter input[type="email"],
-  .newsletter button {
-    border-radius: 4px;
-    margin: 5px 0;
+  .footer-section.newsletter input,
+  .footer-section.newsletter button {
     width: 100%;
   }
 }
