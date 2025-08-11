@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 M-Store All Rights Reserved.</p>
+        <p>© 2025 All Rights Reserved by M-Store</p>
       </div>
     </footer>
   );
