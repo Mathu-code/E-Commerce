@@ -14,7 +14,7 @@ import {
     updateProfileRequest,
     updateProfileSuccess,
     updateProfileFail,
-    clearUpdateProfile,
+    //clearUpdateProfile,
     updatePasswordRequest,
     updatePasswordSuccess,
     updatePasswordFail,
