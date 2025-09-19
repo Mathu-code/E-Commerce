@@ -1,2 +1,2 @@
 # Github
-first project
+My first Mern stack E-Commerce  project
